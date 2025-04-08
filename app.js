@@ -17,5 +17,6 @@ app.get('/users/:id', (req, res) => {
     res.status(404).json({ error: 'User not found' });
   }
 });
-
+const PORT = 3000; 
+app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
 module.exports = app;
